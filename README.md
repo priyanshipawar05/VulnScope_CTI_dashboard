@@ -181,5 +181,23 @@ By working on this Cyber Threat Intelligence (CTI) Dashboard project, learners w
 
 This project strengthens practical knowledge in cybersecurity operations, full-stack development, API integration, and data visualization — making it an excellent hands-on learning experience for aspiring security analysts and developers.
 
+---
+
+## 📎 Enclosures
+
+The following documents and assets are included in this repository to support demonstration, documentation, and evaluation of the project:
+
+- 📄 [Sample Scan Report (PDF)](./Sample_VulnScope_Report.pdf)  
+  → A PDF showing an example scan result with VirusTotal detection stats.
+
+- 📝 [Final Project Report (PDF)](./VulnScope_Project_Report.pdf)  
+  → Contains project introduction, tools used, implementation steps, and conclusion.
+
+- 🖼️ Dashboard Screenshots  
+  - ![Dashboard Overview](./dashboard.png)
+  - ![Threat Lookup History](./threat-lookup-history.png)
+
+- 📦 [Project Source Code](./VulnScope.zip)  
+  → Zipped package containing the complete project folder (Flask app, templates, static files).
 
 Happy Threat Hunting! ⚔️
