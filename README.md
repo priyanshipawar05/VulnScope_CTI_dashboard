@@ -52,7 +52,6 @@ VulnScope/
 │   └── app.py
 ├── reports/
 │   ├── lookup_log.json
-│   ├── scan_log.json
 │   └── tags.json
 └── requirements.txt
 ```
@@ -137,6 +136,27 @@ flask run
 - Use the Lookup feature to check any suspicious IP/domain.
 - Explore visualizations for threat trends and statistics.
 - Tag and export relevant data for reports or compliance.
+
+---
+
+## ⚙️ How It Works
+
+1. **User submits a target** (domain or IP address) through the lookup form.
+2. The Flask backend triggers a request to the VirusTotal Public API.
+3. API response is parsed to extract:
+   - Detection ratio (malicious / harmless / undetected)
+   - Scan metadata (e.g., analysis date, engine verdicts)
+4. The results are rendered on the dashboard, including:
+   - Tabular threat intelligence
+   - Donut chart visualization
+   - Lookup timestamp
+5. The scan is logged in `lookup_log.json` along with:
+   - Tag status (optional user input)
+   - Lookup time
+6. User can:
+   - Export the result as a PDF
+   - Tag the threat as Safe / Suspicious / Malicious
+   - View lookup history via the sidebar
 
 ---
 
