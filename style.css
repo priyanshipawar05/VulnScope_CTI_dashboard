@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    padding: 30px;
+    color: #222;
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 30px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #eaeaea;
+}
+
+td.vuln-XSS { color: #d9534f; font-weight: bold; }
+td.vuln-SQLi { color: #f0ad4e; font-weight: bold; }
+td.vuln-CSRF { color: #5bc0de; font-weight: bold; }
