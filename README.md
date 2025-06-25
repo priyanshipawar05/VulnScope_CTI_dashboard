@@ -4,12 +4,14 @@
 
 ---
 
-## 🛡️ Overview
+## 🧠 Project Overview
+
 The Cyber Threat Intelligence (CTI) Dashboard is a sophisticated, real-time, and interactive platform meticulously designed to aggregate, correlate, and analyze threat intelligence feeds sourced from diverse open CTI repositories. This comprehensive system empowers security analysts and incident response teams to continuously monitor the evolving threat landscape, validate potentially malicious indicators, and derive meaningful, actionable insights through intuitive and visually compelling dashboards. By consolidating fragmented threat data into a unified and easily navigable interface, the CTI Dashboard significantly enhances an organization’s situational awareness, facilitates timely threat detection, and supports informed, proactive decision-making to strengthen overall cybersecurity posture.
 
 ---
 
 ## 🎯 Objective
+
 The primary objective is to design and implement a robust, real-time dashboard that seamlessly consolidates threat intelligence data from a multitude of reputable sources. This integrated platform aims to empower cybersecurity professionals with enhanced visibility into the threat landscape, enabling continuous, proactive monitoring and facilitating swift, informed responses to emerging cyber threats. By providing timely, comprehensive, and actionable intelligence, the dashboard supports organizations in fortifying their security posture and mitigating potential risks more effectively.
 
 ---
@@ -40,20 +42,21 @@ The primary objective is to design and implement a robust, real-time dashboard t
 
 ## 🗂️ Project Structure
 
-```bash
+```text
 VulnScope/
-|---dashboard/
-|---|---static/
-|---|---|---style.css
-|---|---templates/
-|---|---|---index.html
-|---|---app.py
-|---reports/
-|---|---lookup_log.json
-|---|---scan_log.json
-|---|---tags.json
-|---requirements.txt
+├── dashboard/
+│   ├── static/
+│   │   └── style.css
+│   ├── templates/
+│   │   └── index.html
+│   └── app.py
+├── reports/
+│   ├── lookup_log.json
+│   ├── scan_log.json
+│   └── tags.json
+└── requirements.txt
 ```
+
 ---
 
 ## 🧭 Project Workflow
@@ -61,7 +64,7 @@ VulnScope/
 ### 1️⃣ Data Collection
 - Integrate with VirusTotal API to pull threat data.
 - Schedule periodic API requests to ensure continuous feed updates.
-- Store retrieved data securely in MongoDB.
+- - Store retrieved data in structured JSON logs (extensible to MongoDB).
 
 ### 2️⃣ Data Display
 Design UI components to display:
@@ -99,16 +102,18 @@ Use libraries like Chart.js for dynamic, responsive charts.
 ### 🔹 Clone the Repository
 ```bash
 git clone https://github.com/priyanshipawar05/VulnScope_CTI_dashboard.git
-cd VulnScope
+cd VulnScope_CTI_dashboard
 ```
 
 ### 🔹 Create a Virtual Environment
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # For Unix/macOS
+venv\Scripts\activate     # For Windows
 ```
 
-### 🔹 Install Dependencies
+### 🔹 Install Project Dependencies
+Install all required Python packages using the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
@@ -116,13 +121,15 @@ pip install -r requirements.txt
 ### 🔹 Configure API Keys
 Create a `.env` file:
 ```env
-VIRUSTOTAL_API_KEY=YOUR_VIRUSTOTAL_API_KEY
+VIRUSTOTAL_API_KEY=your_actual_virustotal_api_key
+
 ```
 
 ### 🔹 Run the Application
 ```bash
-flask run  # or python manage.py runserver for Django
+flask run  
 ```
+
 
 ## 🔍 Usage
 - Access the dashboard at [http://localhost:5000](http://localhost:5000).
@@ -149,16 +156,17 @@ flask run  # or python manage.py runserver for Django
 
 
 ## 🎓 Learning Outcomes
+
 By working on this Cyber Threat Intelligence (CTI) Dashboard project, learners will:
 
-✅ Understand the fundamentals of threat intelligence — Learn how to collect, process, and interpret threat feeds from reputable CTI sources.
-✅ Gain experience with APIs — Integrate and interact with public APIs like VirusTotal for real-time threat data.
-✅ Design interactive dashboards — Use JavaScript libraries (e.g., Chart.js) to create dynamic, user-friendly data visualizations.
-✅ Implement user input and validation — Build secure forms for verifying indicators and handling user queries.
-✅ Enhance reporting and compliance understanding — Enable data export and tagging, simulating real-world security operations workflows.
-✅ Practice deployment and security best practices — Prepare for production deployment, API key management, and securing sensitive information.
+- **Understand the fundamentals of threat intelligence** — Learn how to collect, process, and interpret threat feeds from reputable CTI sources.
+- **Gain experience with APIs** — Integrate and interact with public APIs like VirusTotal for real-time threat data.
+- **Design interactive dashboards** — Use JavaScript libraries (e.g., Chart.js) to create dynamic, user-friendly data visualizations.
+- **Implement user input and validation** — Build secure forms for verifying indicators and handling user queries.
+- **Enhance reporting and compliance understanding** — Enable data export and tagging, simulating real-world security operations workflows.
+- **Practice deployment and security best practices** — Prepare for production deployment, API key management, and securing sensitive information.
 
-This project strengthens practical knowledge in cybersecurity operations, full-stack development, API integration, and data visualization, making it an excellent hands-on learning experience for aspiring security analysts and developers.
+This project strengthens practical knowledge in cybersecurity operations, full-stack development, API integration, and data visualization — making it an excellent hands-on learning experience for aspiring security analysts and developers.
 
 
 Happy Threat Hunting! ⚔️
