@@ -140,6 +140,19 @@ flask run
 
 ---
 
+## 🧪 Sample Scan Targets
+
+You can use the following test IPs/domains to try out the dashboard:
+
+- `8.8.8.8` — Google's Public DNS (safe)
+- `testphp.vulnweb.com` — Known for training web attacks (safe)
+- `185.199.110.153` — GitHub Pages (safe)
+- `s.teamy.cc` — Example flagged domain
+- `malicious-site.com` — Example of a suspicious domain
+These targets will demonstrate lookup functionality and visualization even with the free VirusTotal API.
+
+---
+
 ## 📦 Deliverables
 - A fully functional real-time Cyber Threat Intelligence Dashboard
 - Capability to lookup threats and verify user-supplied indicators
