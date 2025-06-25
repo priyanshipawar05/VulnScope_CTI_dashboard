@@ -139,27 +139,6 @@ flask run
 
 ---
 
-## ⚙️ How It Works
-
-1. **User submits a target** (domain or IP address) through the lookup form.
-2. The Flask backend triggers a request to the VirusTotal Public API.
-3. API response is parsed to extract:
-   - Detection ratio (malicious / harmless / undetected)
-   - Scan metadata (e.g., analysis date, engine verdicts)
-4. The results are rendered on the dashboard, including:
-   - Tabular threat intelligence
-   - Donut chart visualization
-   - Lookup timestamp
-5. The scan is logged in `lookup_log.json` along with:
-   - Tag status (optional user input)
-   - Lookup time
-6. User can:
-   - Export the result as a PDF
-   - Tag the threat as Safe / Suspicious / Malicious
-   - View lookup history via the sidebar
-
----
-
 ## 🧪 Sample Scan Targets
 
 You can use the following test IPs/domains to try out the dashboard:
