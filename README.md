@@ -194,8 +194,9 @@ The following documents and assets are included in this repository to support de
   → Contains project introduction, tools used, implementation steps, and conclusion.
 
 - 🖼️ Dashboard Screenshots  
-  - ![Dashboard Overview](./dashboard.png)
-  - ![Threat Lookup History](./threat-lookup-history.png)
+  - ![Dashboard Overview](screenshots/dashboard.png)
+  - ![Threat Lookup History](screenshots/threat-lookup-history.png)
+  - ![Donut Chart](screenshots/donut_chart.png)
 
 - 📦 [Project Source Code](./VulnScope.zip)  
   → Zipped package containing the complete project folder (Flask app, templates, static files).
