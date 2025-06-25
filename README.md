@@ -198,7 +198,4 @@ The following documents and assets are included in this repository to support de
   - ![Threat Lookup History](screenshots/threat-lookup-history.png)
   - ![Donut Chart](screenshots/donut_chart.png)
 
-- 📦 [Project Source Code](./VulnScope.zip)  
-  → Zipped package containing the complete project folder (Flask app, templates, static files).
-
 Happy Threat Hunting! ⚔️
